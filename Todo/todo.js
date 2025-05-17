@@ -8,3 +8,8 @@ function addTask() {
     taskInput.value = "";
   }
 }
+
+function clearTasks() {
+  const taskList = document.getElementById("taskList");
+  taskList.innerHTML = "";
+}
