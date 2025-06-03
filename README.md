@@ -1,6 +1,6 @@
 # Full-Stack Web Development Learning Journey
 
-Welcome to my full-stack web development portfolio! I started this journey on May 5, 2025, with the goal of becoming a full-stack developer by October 3, 2025, targeting roles in the $85k–$110k range. This repository (`fullstackEd`) tracks my progress, projects, and skills as I work through Udemy, freeCodeCamp, and hands-on projects.
+Welcome to my full-stack web development portfolio! I started this journey on May 5, 2025, with the goal of becoming a full-stack developer by October, 2025. This repository (`fullstackEd`) tracks my progress, projects, and skills as I work through Udemy, freeCodeCamp, and hands-on projects.
 
 ## Progress Timeline
 
