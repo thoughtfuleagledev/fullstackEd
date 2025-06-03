@@ -1,25 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 10px;
+html {
+    margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
-    line-height: 180%;
-}
-
-h2 {
+.mainHeader {
   text-align: center;
-  color: #444;
+  padding: 80px 20px;
+  background: #dddddd80;
+  margin-bottom: 50px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
+.mainHeader h1 {
+  font-size: 3em;
+  color: #00bbd4;
+}
+
+.mainHeader p {
+  font-size: 1.2em;
+  color: #bbb;
+}
+
+header:not(.darkMode) {
+    background-color: #fbfbfb80;
+    color: #000;
 }
 
 img {
@@ -29,17 +34,37 @@ img {
     max-width: 200px;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    margin: 0px 500px;
+    padding: 0;
+    background-color: #000;
+    color: #f0f0f0;
+    overflow-x: hidden
+}
+
+h1 {
+    text-align: center;
+    color: #f0e9e97e;
+    line-height: 180%;
+}
+
+h2 {
+  text-align: center;
+  color: #f0e9e97e;
+}
+
+.pageContent {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px 500px;
+}
+
 a {
     text-decoration: none;
-}
-
-.welcome {
-    background-color: #666;
-}
-
-html {
-    margin: 0;
-    padding: 0;
 }
 
 ul {
@@ -71,4 +96,136 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.contentWrap {
+  position: relative;
+  z-index: 10;
+}
+
+.cardSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  padding: 50px 20px;
+  perspective: 1500px;
+}
+
+.virtualCardWrap {
+  width: 350px;
+  height: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: 0 10px 30px #00000080, 0 0 60px #0000004d inset;
+  border-radius: 15px;
+}
+
+.virtualCardWrap:hover {
+  transform: rotateY(180deg) translateY(0px);
+  box-shadow: 0 20px 50px #000000b3, 0 0 80px #00000066 inset;
+}
+
+.virtualCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.cardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #222, #0a0a0a);
+  display: flex;
+  overflow: hidden;
+}
+
+.cardFront {
+  z-index: 2;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+  display: flex;
+}
+
+.cardContent {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f0f0f0;
+  text-shadow: 0 0 50px #00000080;
+  position: relative;
+  z-index: 2;
+}
+
+.frontContent {
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.frontContent h2 {
+  margin-bottom: 5px;
+  color: #f0f0f0;
+  font-size: 1.8em;
+}
+
+.frontContent h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #f0f0f0;
+  font-size: 1.2em;
+}
+
+.frontContent p, .frontContent a {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.frontContent a:hover {
+  color: #f0f0f0;
+}
+
+.backContent {
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.backContent h3 {
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.backContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.backContent li {
+  font-size: 0.85em;
+  margin-bottom: 3px;
+}
+
+body:not(.darkMode) {
+    background-color: #00000080;
+    color: #000;
+}
+
+.backContent:not(.darkMode) h2 {
+  color: #fbfbfb80; 
 }

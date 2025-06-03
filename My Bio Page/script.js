@@ -1,12 +1,11 @@
-window.onload = function() {
-  alert("Welcome to my bio page!");
-};
-
-document.querySelector("h1").addEventListener("click", function() {
-  this.style.color = "#ff0000";
-});
-
 function toggleSkills() {
   const skillsList = document.querySelector("#skillsList");
   skillsList.style.display = skillsList.style.display === "none" ? "block" : "none";
 }
+
+const toggleButton = document.getElementById('toggleMode');
+
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('darkMode');
+    toggleButton.textContent = document.body.classList.contains('darkMode') ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+});

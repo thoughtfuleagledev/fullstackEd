@@ -5,36 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Bio Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
   </head>
-  <body>
-    <main>
-      <div section class="welcome">
+  <body class="darkMode">
+    <button id="toggleMode" class="lightMode">Toggle Dark Mode</button>
+    <div class="contentWrap">
+      <header class="mainHeader">
         <h1>Welcome to My Bio Page</h1>
-        <img
-          src="https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/323331794_844184039999024_3625276560328530835_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=g8eMqe6NxIAQ7kNvwGGCg5x&_nc_oc=AdkuFCQI9BIbvx01Wj5Ngh9uQuAUUNp31irOqm0Q-bIhxPFzocKzZxYWaPlGDfce6TwJ8Sq8-qxh8EA4n9Ve-gsS&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=odoMlYkw_VNBoiVKsBc4gQ&oh=00_AfLUUBfAnIrs0zcYMy59Qi-658qeOBx92yI71CSV3uiX2Q&oe=6824655C"
-          alt="Isla and Daddy"
-        />
+        <img src="IandD.jpg" alt="Isla and Daddy" />
         <hr />
+      </header>
+      <main class="pageContent">
+        <section>
+          <h2>My Goal:</h2>
+          <p>Learning full-stack web development.</p>
+          <h2>About Me:</h2>
+          <p>
+            I'm a single dad with a 9yo daughter. I work the gig economy and
+            with my family's business to frame artwork and sports memorabilia,
+            while she is with her mother. Otherwise, her and I enjoy spending
+            time together with nature and animals outdoors and playing board and
+            video games together inside.
+          </p>
+        </section>
+      </main>
+    </div>
+    <section class="cardSection">
+      <div class="virtualCardWrap">
+        <div class="virtualCard">
+          <div class="cardFace cardFront">
+            <div class="cardContent frontContent">
+              <h2>Lance Curtis</h2>
+              <h3>Full-Stack Developer</h3>
+              <p>(949) 813-2258</p>
+              <a href="lancecurtis1986@gmail.com">lancecurtis1986@gmail.com</a>
+              <a href="https://github.com/thoughtfuleagledev/fullstackEd"
+                >https://github.com/thoughtfuleagledev/fullstackEd</a
+              >
+            </div>
+          </div>
+          <div class="cardFace cardBack">
+            <div class="cardContent backContent">
+              <h2>My Skills:</h2>
+              <ul id="bottomSkills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>DOM Manipulation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <h2>My Goal:</h2>
-      <p>Learning full-stack web development.</p>
-      <h2>About Me:</h2>
-      <p>
-        I'm a single dad with a 9yo daughter. I work the gig economy and with my
-        family's business to frame artwork and sports memorabilia, while she is
-        with her mother. Otherwise, her and I enjoy spending time together with
-        nature and animals outdoors and playing board and video games together
-        inside.
-      </p>
-    </main>
-    <section></section>
-    <h2>My Skills:</h2>
-    <ul id="skillsList">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JS</li>
-    </ul>
-    <button onclick="toggleSkills()">Toggle Skills</button>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
