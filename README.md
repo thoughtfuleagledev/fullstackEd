@@ -38,13 +38,13 @@ Welcome to my full-stack web development portfolio! I started this journey on Ma
 
 - **My Bio Page**
 
-  - Features: Toggle skill list, light/dark mode toggle, rotating/floating card.
+  - Features: image, favicon, light/dark mode toggle, and rotating/floating card.
   - Skills: HTML, CSS, JavaScript, DOM manipulation, and event handling.
 
 - **To-Do List**
 
   - Features: Add tasks, clear all tasks, mark tasks as complete with strikethrough.
-  - Skills: HTML, CSS, JavaScript, DOM manipulation, andevent handling.
+  - Skills: HTML, CSS, JavaScript, DOM manipulation, and event handling.
 
 - **Calculator App**
 
