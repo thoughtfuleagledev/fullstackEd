@@ -1,0 +1,34 @@
+<h1>Edit Product</h1>
+<form action="/products/<%= product._id %>?_method=PUT" method="POST">
+  <label for="name">Product Name:</label>
+  <input
+    type="text"
+    name="name"
+    id="name"
+    placeholder="Product Name"
+    value="<%= product.name %>"
+  />
+  <label for="price">Price:</label>
+  <input
+    type="number"
+    name="price"
+    id="price"
+    placeholder="Price"
+    value="<%= product.price %>"
+  />
+  <label for="category">Category:</label>
+  <select name="category" id="category">
+    <option value="fruits" <%= product.category === 'fruits' ? 'selected': '' %>>Fruits</option>
+    <option value="vegetables" <%= product.category === 'vegetables' ? 'selected': '' %>>Vegetables</option>
+    <option value="dairy" <%= product.category === 'dairy' ? 'selected': '' %>>Dairy</option>
+    <option value="fungi" <%= product.category === 'fungi' ? 'selected': '' %>>Fungi</option>
+    <option value="baked" <%= product.category === 'baked' ? 'selected': '' %>>Baked Goods</option>
+  </select>
+  <button>Submit</button>
+</form>
+<br />
+<a href="/products/<%= product._id %>">Product Details</a>
+<a href="/products">All Products</a>
+<br><br>
+<form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+  <button>Delete</button>

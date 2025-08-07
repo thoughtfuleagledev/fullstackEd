@@ -1,0 +1,8 @@
+<h1><%= campground.title %> Camp Details</h1>
+<h2><%= campground.location %></h2>
+<a href="/campgrounds/<%= campground._id %>/edit">Edit Campground</a>
+<p>
+<form action="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST">
+  <button>Delete Camp</button>
+</form>
+</p>

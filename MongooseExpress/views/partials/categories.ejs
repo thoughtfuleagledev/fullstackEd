@@ -1,0 +1,9 @@
+<h2><%= categoryName %>:</h2>
+<ul>
+  <% for(let product of products) { %>
+  <li>
+    <a href="/products/<%=product._id%>"><%=product.name%></a>
+    <a href="/products/<%=product._id%>/edit">Edit</a>
+  </li>
+  <% } %>
+</ul>
