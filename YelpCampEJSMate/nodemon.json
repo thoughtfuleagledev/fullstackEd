@@ -1,0 +1,4 @@
+    {
+      "watch": ["views", "views/campgrounds", "views/partials", "public", "."],
+      "ext": "js,ejs,css,html"
+    }
